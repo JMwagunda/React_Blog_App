@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import "./navbar.css";
 
-export default function Topbar() {
+const Navbar = () => {
   const user = true;
   return (
     <div className="top">
@@ -56,3 +56,5 @@ export default function Topbar() {
     </div>
   );
 }
+
+export default Navbar;

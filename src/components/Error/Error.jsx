@@ -14,8 +14,8 @@ const Error = () => {
             <div>
               <h1 className="error-heading">Oops! Something went wrong</h1>
               <p className="error-text">An unexpected error occurred.</p>
-              <div className="link-container">
-                <Link to={"/"} className="link">
+              <div className="links-container">
+                <Link to={"/"} className="links">
                   Go back home
                 </Link>
               </div>
@@ -34,8 +34,8 @@ const Error = () => {
             <p className="error-status">{error.status}</p>
             <h1 className="error-heading">Oops! {error.statusText}</h1>
             <p className="error-text">{error.data}</p>
-            <div className="link-container">
-              <Link to={"/"} className="link">
+            <div className="links-container">
+              <Link to={"/"} className="links">
                 Go back home
               </Link>
             </div>

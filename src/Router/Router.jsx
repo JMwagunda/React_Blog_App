@@ -1,5 +1,5 @@
 import { createBrowserRouter } from "react-router-dom";
-import Navbar from "../components/Navbar/Navbar.jsx";
+import App from "../App.jsx";
 import Home from "../pages/Homepage/Home.jsx";
 import Register from "../pages/Register/Register.jsx";
 import Login from "../pages/Login/Login.jsx";
@@ -10,10 +10,11 @@ import Error from "../components/Error/Error.jsx";  // Assuming you have an Erro
 
 const currentUser = true;  // This should be managed by your state management
 
-const router = createBrowserRouter([
+const Router = createBrowserRouter([
   {
     path: "/",
-    element: <Navbar />,
+    element: <App />,
+    errorElement: <Error/>,
     children: [
       {
         path: "/",
@@ -51,4 +52,4 @@ const router = createBrowserRouter([
   },
 ]);
 
-export default router;
+export default Router;

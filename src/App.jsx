@@ -1,11 +1,15 @@
-import { RouterProvider } from "react-router-dom";
-import router from "./Router/Router"
+import {Outlet} from "react-router-dom"
+import Navbar from './components/Navbar/Navbar.jsx'
 
-const App = () => {
-  return (
-    <RouterProvider router={router} />
+function App() {
+  return(
+    <>
+        <Navbar/>
+        <section style={{
+          scrollBehaviour:"smooth"
+        }}><Outlet/></section>
+    </>
   );
 }
 
-export default App;
-
+export default App

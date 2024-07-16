@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import "./sidebar.css";
+import pic2 from "../../../public/pic2.jpg"
 
 const Sidebar = () => {
   return (
@@ -7,8 +8,8 @@ const Sidebar = () => {
       <div className="sidebarItem">
         <span className="sidebarTitle">ABOUT ME</span>
         <img
-          src="https://themegoods-cdn-pzbycso8wng.stackpathdns.com/grandblog/demo/wp-content/uploads/2015/11/aboutme.jpg"
-          alt=""
+          src={pic2}
+          alt="profile"
         />
         <p>
           Laboris sunt aute cupidatat velit magna velit ullamco dolore mollit
